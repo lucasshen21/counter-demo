@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.spacer {
+  margin-top: 5rem;
+  margin-left: 10rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.counter {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  width: fit-content;
+}
+
+.counter button,
+.add {
+  font-size: 1.3rem;
+  background: rgb(0, 183, 255);
+  border: none;
+  border-radius: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-link {
-  color: #61dafb;
+.add {
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter button,
+.counter span {
+  padding: 0.5rem 1rem;
+}
+
+.remove {
+  background: rgb(255, 89, 12) !important;
+  width: auto !important;
 }
